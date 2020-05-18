@@ -2,11 +2,11 @@ const mongoose = require('mongoose');
 
 const PostSchema = new mongoose.Schema({
   author:String,
-  place:String,
-  description:String,
+  place:String,                                 
+  description:String,                         //Representacao da tabela do DB em formato de JS
   hashtags:String,
   image:String,
-  likes:{
+  likes:{     
     type:Number,
     default:0,
   }
